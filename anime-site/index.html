@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Anime World</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search anime...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Action">Action</option>
+        <option value="Romance">Romance</option>
+        <option value="Fantasy">Fantasy</option>
+      </select>
+      <button id="themeToggle">🌙 Light Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Recently Watched</h2>
+    <div id="recentContainer" class="anime-container"></div>
+
+    <h2>All Anime</h2>
+    <div id="animeContainer" class="anime-container"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

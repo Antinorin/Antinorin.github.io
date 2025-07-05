@@ -1,0 +1,26 @@
+[
+  {
+    "id": "naruto",
+    "title": "Naruto",
+    "category": "Action",
+    "description": "A young ninja seeks recognition and dreams of becoming the Hokage.",
+    "video": "t1I-8IV2bQE",
+    "image": "assets/thumbnails/naruto.jpg"
+  },
+  {
+    "id": "yourname",
+    "title": "Your Name",
+    "category": "Romance",
+    "description": "Two strangers find themselves linked in a mysterious way.",
+    "video": "hRfHcp2GjVI",
+    "image": "assets/thumbnails/yourname.jpg"
+  },
+  {
+    "id": "bleach",
+    "title": "Bleach",
+    "category": "Fantasy",
+    "description": "Ichigo becomes a Soul Reaper to save his family from evil spirits.",
+    "video": "8Y77Qur5ZKk",
+    "image": "assets/thumbnails/bleach.jpg"
+  }
+]

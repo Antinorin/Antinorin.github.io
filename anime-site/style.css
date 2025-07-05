@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background: #121212;
+  color: #fff;
+}
+.light {
+  background: #ffffff;
+  color: #000;
+}
+.anime-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.anime-box {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.anime-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.anime-box:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.video-box {
+  padding: 1rem;
+}
