@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Any File</title>
+</head>
+<body>
+  <h2>Upload Any File (Video, Image, Subtitles, etc.)</h2>
+
+  <input type="file" id="fileInput" accept="*" />
+  <br><br>
+
+  <div id="previewArea"></div>
+
+  <script>
+    const input = document.getElementById('fileInput');
+    const previewArea = document.getElementById('previewArea');
+
+    input.addEventListener('change', function () {
+      const file = input.files[0];
+      if (!file) return;
+
+      const type = file.type;
+
+      // Reset preview
+      previewArea.innerHTML = '';
+
+      if (type.startsWith('video/')) {
+        const video = document.createElement('video');
+        video.controls = true;
+        video.src = URL.createObjectURL(file);
+        video.style.maxWidth = '100%';
+        previewArea.appendChild(video);
+      } else if (type.startsWith('image/')) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.style.maxWidth = '100%';
+        previewArea.appendChild(img);
+      } else {
+        const text = document.createElement('p');
+        text.textContent = `File "${file.name}" selected.`;
+        previewArea.appendChild(text);
+      }
+    });
+  </script>
+</body>
+</html>
